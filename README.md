@@ -92,7 +92,7 @@ endmodule
 
 
 
-![img](imagenes/simulacion.jpg)
+![img](imagenes/simulacion.png)
 
 
 
