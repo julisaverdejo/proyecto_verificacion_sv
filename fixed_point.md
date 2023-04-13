@@ -1,0 +1,35 @@
+# Representación en punto fijo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Referencias
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
