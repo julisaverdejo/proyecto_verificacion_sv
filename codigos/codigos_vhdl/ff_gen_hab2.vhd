@@ -15,7 +15,7 @@ end;
 architecture ff of ff_gen_hab2 is
 	signal Qn, Qp : std_logic_vector(n-1 downto 0);
 begin		 
---Qn <= Qp when HAB = '0' else D;	 
+	 
 	with HAB select
 	Qn <=  	                 (others => '0') when "00",
 										   D when "01",

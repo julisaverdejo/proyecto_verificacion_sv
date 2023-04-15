@@ -3,6 +3,25 @@ Autor: Julisa Verdejo Palacios
 
 
 
+- Qué es verificación
+- Que es systemverilog
+  - guidelines
+  - tipos de datos
+
+
+
+- MAC
+  - definición
+  - aplicaciones
+  - características 
+  - punto fijo
+
+
+
+
+
+
+
 ## 1. MAC (Multiply-Accumulator)
 
 **1.1 Definición**

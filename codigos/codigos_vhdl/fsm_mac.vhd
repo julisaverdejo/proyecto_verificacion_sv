@@ -44,7 +44,7 @@ begin
     end case;
   end process;
 
-  -- Registros para estados
+
   process(RST,CLK)
   begin
     if RST = '1' then
