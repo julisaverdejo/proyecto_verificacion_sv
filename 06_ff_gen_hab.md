@@ -1,8 +1,7 @@
 # 6. ff_gen_hab
 
-
-
-
+- Descripción:
+- Código:
 
 ```verilog
 module ff_gen_hab #(parameter n  = 60) (rst, clk, hab, d, q);
@@ -26,3 +25,6 @@ module ff_gen_hab #(parameter n  = 60) (rst, clk, hab, d, q);
 endmodule
 ```
 
+
+
+- [x] Síntesis

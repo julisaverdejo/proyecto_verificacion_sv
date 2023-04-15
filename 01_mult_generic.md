@@ -1,10 +1,8 @@
 # 1. mult_generic
 
+- Descripción: 
 
-
-
-
-
+- Código
 
 ```verilog
 module mult_generic #(parameter n = 18, parameter m = 36) (x, a, m1);
@@ -22,3 +20,6 @@ module mult_generic #(parameter n = 18, parameter m = 36) (x, a, m1);
 endmodule
 ```
 
+
+
+- [x] Síntesis

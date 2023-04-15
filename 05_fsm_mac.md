@@ -1,8 +1,7 @@
 # 5. fsm_mac
 
-
-
-
+- Descripción:
+- Código:
 
 ```verilog
 module fsm_mac (rst, clk, stf, z, lda, ldr, eof, opc);
@@ -63,3 +62,6 @@ module fsm_mac (rst, clk, stf, z, lda, ldr, eof, opc);
 endmodule
 ```
 
+
+
+- [x] Síntesis

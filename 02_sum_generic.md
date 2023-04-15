@@ -1,8 +1,7 @@
 # 2. sum_generic
 
-
-
-
+- Descripción:
+- Código:
 
 ```verilog
 module sum_generic #(parameter n = 60) (q, p, s);
@@ -14,3 +13,4 @@ module sum_generic #(parameter n = 60) (q, p, s);
 endmodule
 ```
 
+- [x] Síntesis

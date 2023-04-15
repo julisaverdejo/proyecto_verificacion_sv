@@ -1,10 +1,7 @@
 # 8. top_mac
 
-
-
-
-
-
+- Descripción:
+- Código:
 
 ```verilog
 module top_mac(rst, clk, stf, x, a, n, s, eof, i, y);

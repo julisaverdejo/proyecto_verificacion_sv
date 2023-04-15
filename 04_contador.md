@@ -1,8 +1,7 @@
 # 4. contador
 
-
-
-
+- Descripción:
+- Código:
 
 ```verilog
 module contador #(parameter m = 6) (rst, clk, opc, n, z, i);
@@ -38,3 +37,6 @@ module contador #(parameter m = 6) (rst, clk, opc, n, z, i);
 endmodule
 ```
 
+
+
+- [x] Síntesis

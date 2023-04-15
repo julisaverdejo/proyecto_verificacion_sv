@@ -1,8 +1,7 @@
 # 7. ajuste
 
-
-
-
+- Descripción:
+- Código:
 
 ```verilog
 module ajuste (r, s, y);
@@ -61,3 +60,6 @@ module ajuste (r, s, y);
 endmodule
 ```
 
+
+
+- [x] Síntesis
