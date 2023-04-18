@@ -1,20 +1,77 @@
-# Verificación de arquitectura MAC
+# Verificación de arquitectura MAC en SV.
 Autor: Julisa Verdejo Palacios
 
 
 
-- Qué es verificación
-- Que es systemverilog
-  - guidelines
-  - tipos de datos
+
+
+## 1. Verificación
+
+Definición
+
+objetivo de la verificación
+
+testing at different levels
+
+plan de verificación
 
 
 
-- MAC
-  - definición
-  - aplicaciones
-  - características 
-  - punto fijo
+##  2. SystemVerilog
+
+Definición
+
+indicar que se trata de programación orientada a objetos
+
+### 2.1 Modelo de verificación en SV
+
+
+
+#### 2.1.1 Environment
+
+
+
+#### 2.1.2 Generator
+
+
+
+#### 2.1.3 Transaction
+
+
+
+#### 2.1.4 Driver
+
+
+
+#### 2.1.5 Scoreboard
+
+
+
+#### 2.1.6 Monitor
+
+
+
+#### 2.1.7 Testbench
+
+
+
+#### 2.1.8 Interface
+
+
+
+### 2.2 Tipos de datos
+
+
+
+
+
+# Software para verificación en SV
+
+
+
+## 3. Active HDL
+
+ 
 
 
 
@@ -22,23 +79,23 @@ Autor: Julisa Verdejo Palacios
 
 
 
-## 1. MAC (Multiply-Accumulator)
-
-**1.1 Definición**
 
 
 
 
-
-**1.2 Aplicaciones**
-
+# Dispositivo a verificar
 
 
 
+## 4. MAC (Multiply-Accumulator)
 
-**1.3 Características**
 
-* Trabaja con punto fijo
+
+### 4.1 Aplicaciones
+
+### 4.2 Características
+
+* Trabaja con [punto fijo](fixed_point.md)
 * 18 bits de entrada 
 * 36 bits para coeficientes
 * 60 bits para resultado parcial interno
@@ -126,9 +183,7 @@ endmodule
 
 
 
-
-
-## 3. Códigos
+### 4.3 Códigos
 
 1. [01_mult_generic](01_mult_generic.md)
 2. [02_sum_generic](02_sum_generic.md)
@@ -147,6 +202,8 @@ endmodule
 
 
 
+
+## Referencias
 
 
 
