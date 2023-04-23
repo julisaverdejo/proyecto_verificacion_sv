@@ -3,6 +3,10 @@ Autor: Julisa Verdejo Palacios
 
 
 
+***Resumen:*** 
+
+
+
 
 
 ## 1. Verificación
@@ -29,27 +33,79 @@ indicar que se trata de programación orientada a objetos
 
 #### 2.1.1 Environment
 
+Contiene todos los componentes de verificación mencionados
 
+importa el orden en el que se incluyan las clases
+
+1- generador
+
+2- driver
 
 #### 2.1.2 Generator
+
+randomize the input values
+
+
+
+Esta clase se encarga de generar estímulos necesarios para controlar el DUT. 
+
+- En esta clase se instancia la clase transaction y se define como aleatoria. 
+- La clase generator se conecta a la clase driver por medio de un mailbox. 
+
+Sintaxis:
+
+```systemverilog
+class generator;
+    
+    //declaracion de la clase transaction
+    //declaracion de mailbox
+    //generación de task
+    //repeat count to specify number of items to generate
+    //declaración de event
+    //constructor
+    //main task
+    //packets and puts into mailbox
+    
+endclass 
+```
 
 
 
 #### 2.1.3 Transaction
 
+Esta clase contiene todas las señales del DUT que son requeridas para generar estímulos.
 
+Sintaxis:
+
+```systemverilog
+class transaction;
+    ...
+    transaction_items
+    ...
+endclass
+```
+
+En la clase transaction se ponen restricciones
 
 #### 2.1.4 Driver
 
+Drives the generated stimulus to the design
 
+drive the data from the generator and send data to the DUT
 
 #### 2.1.5 Scoreboard
+
+checks output from the design with expected behavior
+
+hace lo que el circuito está haciendo
+
+se necesita una copia aquí y se debe ir actualizando
 
 
 
 #### 2.1.6 Monitor
 
-
+Monitor the design input-output ports to capture design activity
 
 #### 2.1.7 Testbench
 
@@ -57,11 +113,47 @@ indicar que se trata de programación orientada a objetos
 
 #### 2.1.8 Interface
 
+Es un bloque que agrupa en un solo puerto todas las entradas y salidas del dispositivo bajo prueba (DUT) que pueden ser controladas y supervisadas.
+
+Ventajas:
+
+- Se utiliza para conectar el dispositivo con otros bloques usados en la verificación.
+
+- Reduce errores que pueden producirse durante las conexiones de los módulos
+
+- Pueden añadirse o eliminarse señales con facilidad.
+
+Sintaxis:
+
+```systemverilog
+interface nombre_interface;
+    ...
+    interface_items
+    ...
+endinterface
+```
+
+
+
+> Nota: 
+>
+> Un `interface` puede ser parametrizado con la directiva `parameter`.
+
+
+
+#### 2.1.9 Test
+
+contains the environment that can be changed with different configuration settings
+
 
 
 ### 2.2 Tipos de datos
 
+logic
 
+rand bit
+
+bit
 
 
 
@@ -117,7 +209,7 @@ indicar que se trata de programación orientada a objetos
 
 
 
-**1.4 Diagrama a bloques**
+
 
 
 
@@ -135,8 +227,6 @@ indicar que se trata de programación orientada a objetos
 | $R$      | $60$ bits      | $R(14+7,38)$ | $38$        | $[ -2097152.0, 2097152.0  ]$      |
 
 
-
-## 2. Testbench
 
 
 
@@ -199,7 +289,11 @@ endmodule
 
 
 
+# Verificación de arquitectura MAC
 
+
+
+## 5. Códigos
 
 
 
