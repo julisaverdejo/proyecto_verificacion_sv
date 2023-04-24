@@ -1,6 +1,6 @@
 # Generator
 
-Se encarga de generar los estímulos a las entradas definidas en la clase transaction, estos valores son guardados en un mailbox el cual se comunica con el driver.
+Se encarga de generar los estímulos a las entradas definidas en la clase transaction, estos valores son guardados en un [mailbox](mailbox.md) el cual se comunica con el driver.
 
 Sintaxis:
 
