@@ -11,21 +11,11 @@ Autor: Julisa Verdejo Palacios
 
 ## 1. Verificación
 
-Definición
-
-objetivo de la verificación
-
-testing at different levels
-
-plan de verificación
-
 
 
 ##  2. SystemVerilog
 
-Definición
 
-indicar que se trata de programación orientada a objetos
 
 ### 2.1 Modelo de verificación en SV
 
@@ -40,25 +30,7 @@ indicar que se trata de programación orientada a objetos
 
 
 
-
-
-#### 2.1.5 Scoreboard
-
-checks output from the design with expected behavior
-
-hace lo que el circuito está haciendo
-
-se necesita una copia aquí y se debe ir actualizando
-
-
-
 ### 2.2 Tipos de datos
-
-logic
-
-rand bit
-
-bit
 
 
 
