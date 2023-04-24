@@ -2,18 +2,14 @@
 
 Un mailbox es una forma que utilizan distintos procesos para comunicarse e intercambiar datos entre si.
 
-Este tipo de comunicación funciona como un buzón en la vida real, el proceso A quiere comunicarse con el proceso B (TERMINA LA IDEA DESPUÉS)
-
 En SystemVerilog un mailbox es una clase que cuenta con los siguientes métodos:
 
-| Método                   | Función                                           |
-| ------------------------ | ------------------------------------------------- |
-| `new()`                  | Crea un mailbox.                                  |
-| `put()`                  | Coloca un mensaje en un mailbox.                  |
-| `try_put()`              |                                                   |
-| `get()` / `peek()`       | Recibe un mensaje de un mailbox.                  |
-| `num()`                  | Devuelve cierto número de mensajes de un mailbox. |
-| `try_get() / try_peek()` |                                                   |
+| Método             | Función                                           |
+| ------------------ | ------------------------------------------------- |
+| `new()`            | Crea un mailbox.                                  |
+| `put()`            | Coloca un mensaje en un mailbox.                  |
+| `get()` / `peek()` | Extrae un mensaje de un mailbox.                  |
+| `num()`            | Devuelve cierto número de mensajes de un mailbox. |
 
 **Tabla 1. Métodos de la clase mailbox**
 

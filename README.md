@@ -31,67 +31,16 @@ indicar que se trata de programación orientada a objetos
 
 
 
-#### 2.1.1 Environment
-
-Contiene todos los componentes de verificación mencionados
-
-importa el orden en el que se incluyan las clases
-
-1- generador
-
-2- driver
-
-#### 2.1.2 Generator
-
-randomize the input values
+- 2.1.1 [Interface](211_interface.md)
+- 2.1.2 [Transaction](212_transaction.md)
+- 2.1.3 [Generator](213_generator.md)
+- 2.1.4 [Driver](214_driver.md)
 
 
 
-Esta clase se encarga de generar estímulos necesarios para controlar el DUT. 
-
-- En esta clase se instancia la clase transaction y se define como aleatoria. 
-- La clase generator se conecta a la clase driver por medio de un mailbox. 
-
-Sintaxis:
-
-```systemverilog
-class generator;
-    
-    //declaracion de la clase transaction
-    //declaracion de mailbox
-    //generación de task
-    //repeat count to specify number of items to generate
-    //declaración de event
-    //constructor
-    //main task
-    //packets and puts into mailbox
-    
-endclass 
-```
 
 
 
-#### 2.1.3 Transaction
-
-Esta clase contiene todas las señales del DUT que son requeridas para generar estímulos.
-
-Sintaxis:
-
-```systemverilog
-class transaction;
-    ...
-    transaction_items
-    ...
-endclass
-```
-
-En la clase transaction se ponen restricciones
-
-#### 2.1.4 Driver
-
-Drives the generated stimulus to the design
-
-drive the data from the generator and send data to the DUT
 
 #### 2.1.5 Scoreboard
 
@@ -100,50 +49,6 @@ checks output from the design with expected behavior
 hace lo que el circuito está haciendo
 
 se necesita una copia aquí y se debe ir actualizando
-
-
-
-#### 2.1.6 Monitor
-
-Monitor the design input-output ports to capture design activity
-
-#### 2.1.7 Testbench
-
-
-
-#### 2.1.8 Interface
-
-Es un bloque que agrupa en un solo puerto todas las entradas y salidas del dispositivo bajo prueba (DUT) que pueden ser controladas y supervisadas.
-
-Ventajas:
-
-- Se utiliza para conectar el dispositivo con otros bloques usados en la verificación.
-
-- Reduce errores que pueden producirse durante las conexiones de los módulos
-
-- Pueden añadirse o eliminarse señales con facilidad.
-
-Sintaxis:
-
-```systemverilog
-interface nombre_interface;
-    ...
-    interface_items
-    ...
-endinterface
-```
-
-
-
-> Nota: 
->
-> Un `interface` puede ser parametrizado con la directiva `parameter`.
-
-
-
-#### 2.1.9 Test
-
-contains the environment that can be changed with different configuration settings
 
 
 
@@ -275,17 +180,26 @@ endmodule
 
 ### 4.3 Códigos
 
-1. [01_mult_generic](01_mult_generic.md)
-2. [02_sum_generic](02_sum_generic.md)
-3. [03_ ff_gen_hab2](03_ff_gen_hab2.md)
-4. [04_contador](04_contador.md)
-5. [05_fsm_mac](05_fsm_mac.md)
-6. [06_ff_gen_hab](06_ff_gen_hab.md)
-7. [07_ajuste](07_ajuste.md)
-8. [08_top_mac](08_top_mac.md)
-9. [09_rom_a](09_rom_a.md)
-10. [10_rom_x](10_rom_x.md)
-11. [11_tb_mac](11_tb_mac.md)
+- 4.3.1 [mult_generic](01_mult_generic.md)
+
+- 4.3.2 [sum_generic](02_sum_generic.md)
+- 4.3.3 [ff_gen_hab2](03_ff_gen_hab2.md)
+
+- 4.3.4 [contador](04_contador.md)
+
+- 4.3.5 [fsm_mac](05_fsm_mac.md)
+
+- 4.3.6 [ff_gen_hab](06_ff_gen_hab.md)
+
+- 4.3.7 [ajuste](07_ajuste.md)
+
+- 4.3.8 [top_mac](08_top_mac.md)
+
+- 4.3.9 [rom_a](09_rom_a.md)
+
+- 4.3.10 [rom_x](10_rom_x.md)
+
+- 4.3.11 [tb_mac](11_tb_mac.md)
 
 
 
