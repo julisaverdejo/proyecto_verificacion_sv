@@ -10,7 +10,7 @@ class generator;
     //declaracion de atributos
     //metodos:
     	//constructor
-    	//task    
+    	//main    
 endclass 
 ```
 
