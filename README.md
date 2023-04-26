@@ -25,25 +25,23 @@ Autor: Julisa Verdejo Palacios
 
 
 
+- 2.1.1 [DUT](21_9_dut.md)
 
+- 2.1.2 [Interface](21_1_interface.md)
 
-- 2.1.1 [Interface](21_1_interface.md)
+- 2.1.3 [Transaction](21_2_transaction.md)
 
-- 2.1.2 [Transaction](21_2_transaction.md)
+- 2.1.4 [Generator](21_3_generator.md)
 
-- 2.1.3 [Generator](21_3_generator.md)
+- 2.1.5 [Driver](21_4_driver.md)
 
-- 2.1.4 [Driver](21_4_driver.md)
+- 2.1.6 [Monitor](21_5_monitor.md)
 
-- 2.1.5 [Monitor](21_5_monitor.md)
+- 2.1.7 [Scoreboard](21_6_scoreboard.md)
 
-- 2.1.6 [Scoreboard](21_6_scoreboard.md)
+- 2.1.8 [Environment](21_7_environment.md)
 
-- 2.1.7 [Environment](21_7_environment.md)
-
-- 2.1.8 [Test](21_8_test.md)
-
-- 2.1.9 [DUT](21_9_dut.md)
+- 2.1.9 [Test](21_8_test.md)
 
 - 2.1.10 [Testbench](21_10_testbench.md)
 
