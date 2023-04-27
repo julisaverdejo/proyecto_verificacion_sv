@@ -9,11 +9,15 @@ Autor: Julisa Verdejo Palacios
 
 ## 1. Verificación
 
+La verificación es la comprobación de la legitimidad de un proceso, tarea o en general de cualquier cosa. En diseño de sistemas digitales y en particular en los lenguajes de descripción de hardware (HDL), la verificación ayuda a corregir errores, mejorar la calidad y confiabilidad del diseño, esto puede ahorrar tiempo y dinero antes de implementarlo físicamente.
 
+El objetivo de hacer verificación no es solo para encontrar errores sino asegurarse que el dispositivo cumple con el funcionamiento esperado.
 
 ##  2. SystemVerilog
 
+El lenguaje de programación que se estará utilizando para verificar diseños digitales es SystemVerilog.
 
+SystemVerilog es un lenguaje de descripción y verificación de hardware (HDVL) que combina las características de lenguajes de descripción de hardware (HDL) y lenguajes de alto nivel como C o C++.[1] Esto puede notarse en la manera que este lenguaje utiliza la programación orientada a objetos (OOP) para modelar, simular y realizar pruebas automatizadas para verificar el funcionamiento del diseño.[2]
 
 ### 2.1 Modelo de verificación en SV
 
@@ -59,13 +63,11 @@ Autor: Julisa Verdejo Palacios
 
 
 
-## 3. Active HDL
+
+
+## 3. EDA Playground
 
  
-
-
-
-
 
 
 
@@ -174,25 +176,15 @@ endmodule
 ### 4.3 Códigos
 
 - 4.3.1 [mult_generic](01_mult_generic.md)
-
 - 4.3.2 [sum_generic](02_sum_generic.md)
 - 4.3.3 [ff_gen_hab2](03_ff_gen_hab2.md)
-
 - 4.3.4 [contador](04_contador.md)
-
 - 4.3.5 [fsm_mac](05_fsm_mac.md)
-
 - 4.3.6 [ff_gen_hab](06_ff_gen_hab.md)
-
 - 4.3.7 [ajuste](07_ajuste.md)
-
 - 4.3.8 [top_mac](08_top_mac.md)
 
-- 4.3.9 [rom_a](09_rom_a.md)
 
-- 4.3.10 [rom_x](10_rom_x.md)
-
-- 4.3.11 [tb_mac](11_tb_mac.md)
 
 
 
@@ -200,13 +192,17 @@ endmodule
 
 
 
-## 5. Códigos
+## 5. Plan de verificación
+
+
 
 
 
 ## Referencias
 
+[1] [Duolos: What is SystemVerilog?](https://www.doulos.com/knowhow/systemverilog/what-is-systemverilog/)
 
+[2] [What are the OOPS Concepts in SystemVerilog?](https://chipedge.com/what-are-the-oops-concepts-in-systemverilog/)
 
 
 
