@@ -95,7 +95,7 @@ Además esta arquitectura MAC realiza la operación producto punto:
 
 Sea $\mathbf{a}$ y $\mathbf{b}$ dos vectores definidos como:
 $$
-	\mathbf{x} = \left[ \begin{array}{c}
+\mathbf{x} = \left[ \begin{array}{c}
 		x_{1}\\
 		x_{2}\\
 		\vdots\\
@@ -112,8 +112,6 @@ $$
 		y_{n}
 	\end{array}
 		\right]
-		
-	
 $$
 
 
