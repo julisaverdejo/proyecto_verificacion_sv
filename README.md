@@ -99,6 +99,8 @@ La arquitectura MAC tiene diversas aplicaciones en el campo de procesamiento dig
 
 
 
+Representación en punto fijo de las variables de la MAC
+
 | Variable | Número de bits | Formato      | Mover Punto | Rangos $[-2^{a}, 2^{a} - 2^{-b}]$ |
 | -------- | -------------- | ------------ | ----------- | --------------------------------- |
 | $X$      | $18$ bits      | $A(7,10)$    | $10$        | $[ -128.000000, 127.999023]$      |
@@ -108,7 +110,7 @@ La arquitectura MAC tiene diversas aplicaciones en el campo de procesamiento dig
 | $U$      | $60$ bits      | $U(14+7,38)$ | $38$        | $[ -2097152.0, 2097152.0  ]$      |
 | $R$      | $60$ bits      | $R(14+7,38)$ | $38$        | $[ -2097152.0, 2097152.0  ]$      |
 
-
+**Tabla 1. Representación en punto fijo**
 
 ### 3.3 Códigos
 
@@ -129,7 +131,7 @@ La arquitectura MAC tiene diversas aplicaciones en el campo de procesamiento dig
 
 ## 4. Plan de verificación
 
-
+1. Realizar la verificación de la MAC con valores de entrada conocidos para comprobar que funciona adecuadamente.
 
 
 
