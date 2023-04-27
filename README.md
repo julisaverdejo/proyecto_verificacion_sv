@@ -19,9 +19,9 @@ Autor: Julisa Verdejo Palacios
 
 
 
+![img](imagenes/bloques_sv.svg)
 
-
-
+**Fig 1. Modelo de verificación**
 
 
 
