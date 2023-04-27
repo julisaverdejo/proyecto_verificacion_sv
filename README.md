@@ -15,19 +15,21 @@ El objetivo de hacer verificación no es solo para encontrar errores sino asegur
 
 ##  2. SystemVerilog
 
-El lenguaje de programación que se estará utilizando para verificar diseños digitales es SystemVerilog.
+El lenguaje de programación que se estará utilizando para verificar diseños digitales es SystemVerilog (SV).
 
-SystemVerilog es un lenguaje de descripción y verificación de hardware (HDVL) que combina las características de lenguajes de descripción de hardware (HDL) y lenguajes de alto nivel como C o C++.[1] Esto puede notarse en la manera que este lenguaje utiliza la programación orientada a objetos (OOP) para modelar, simular y realizar pruebas automatizadas para verificar el funcionamiento del diseño.[2]
+SystemVerilog es un lenguaje de descripción y verificación de hardware (HDVL) que combina las características de lenguajes de descripción de hardware (HDL) y lenguajes de alto nivel como C o C++ [1]. Esto puede notarse en la manera que este lenguaje utiliza la programación orientada a objetos (OOP) para modelar, simular y realizar pruebas automatizadas para verificar el funcionamiento del diseño.[2]
 
 ### 2.1 Modelo de verificación en SV
 
-
+El modelo de verificación en SV se muestra en la siguiente imagen:
 
 ![img](imagenes/bloques_sv.svg)
 
 **Fig 1. Modelo de verificación**
 
+> Nota: Revisar primero el siguiente archivo: [oop](oop.md)
 
+Los bloques que se utilizan para el proceso de verificación son los siguientes:
 
 - 2.1.1 [DUT](21_9_dut.md)
 
@@ -50,10 +52,6 @@ SystemVerilog es un lenguaje de descripción y verificación de hardware (HDVL) 
 - 2.1.10 [Testbench](21_10_testbench.md)
 
   
-
-
-
-
 
 ### 2.2 Tipos de datos
 
