@@ -99,6 +99,12 @@ La arquitectura MAC tiene diversas aplicaciones en el campo de procesamiento dig
 
 
 
+![img](imagenes/fsm2p.svg)
+
+**Fig. 4. Máquina de estados de arquitectura MAC**
+
+
+
 Representación en punto fijo de las variables de la MAC
 
 | Variable | Número de bits | Formato      | Mover Punto | Rangos $[-2^{a}, 2^{a} - 2^{-b}]$ |
