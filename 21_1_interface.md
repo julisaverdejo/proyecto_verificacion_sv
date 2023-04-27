@@ -11,7 +11,7 @@ Las ventajas de encapsular las entradas y salidas son:
 Sintaxis:
 
 ```systemverilog
-interface nombre_interface;
+interface nombre_interface(input logic clock, reset);
     ...
     declaracion_variables
     ...

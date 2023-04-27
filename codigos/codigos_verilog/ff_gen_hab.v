@@ -3,7 +3,8 @@ module ff_gen_hab #(parameter n  = 60) (rst, clk, hab, d, q);
 	input [n-1:0] d;
 	output [n-1:0] q;
 	
-	reg [n-1:0] qn, qp;
+	reg [n-1:0] qp;
+	wire [n-1:0] qn;
 	
 	assign qn = (hab == 0) ? qp : d; 
 	

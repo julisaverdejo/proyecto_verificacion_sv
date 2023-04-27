@@ -5,8 +5,8 @@
 
 ```verilog
 module ajuste (r, s, y);
-	input reg [59:0] r;
-	input reg [5:0] s;
+	input [59:0] r;
+	input [5:0] s;
 	output reg [17:0] y;
 	
 		always@(r)

@@ -6,8 +6,8 @@
 ```verilog
 module ff_gen_hab2 #(parameter n = 60) (rst, clk, hab, d, q);
 	input rst, clk;
-	input reg [1:0] hab;
-	input reg [n-1:0] d;
+	input [1:0] hab;
+	input [n-1:0] d;
 	output [n-1:0] q;
 	
 	reg [n-1:0] qn, qp;

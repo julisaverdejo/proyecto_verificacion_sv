@@ -55,11 +55,15 @@ Los bloques que se utilizan para el proceso de verificación son los siguientes:
 
 ## 3. MAC (Multiply-Accumulator)
 
-
+Es una arquitectura diseñada para realizar operaciones de multiplicación y acumulación de manera eficiente en aplicaciones de procesamiento digital de señales.
 
 ### 3.1 Aplicaciones
 
+La arquitectura MAC tiene diversas aplicaciones en el campo de procesamiento digital de señales, algunas de ellas son:
 
+- Detección de bordes, reducción de ruido y compresión de imagen
+- Cálculo de correlación de una señal recibida con una secuencia de sincronización o para aplicar técnicas de modulación y demodulación de señal.
+- Procesar señales de audio en tiempo real, calcular la convolución de una señal de entrada con una respuesta de impulso o aplicar un filtro FIR o IIR a una señal de audio.
 
 ### 3.2 Características
 
@@ -91,7 +95,7 @@ Los bloques que se utilizan para el proceso de verificación son los siguientes:
 
 ![img](imagenes/mac_bloques.svg)
 
-**Fig. 3. Diagrama a bloques de arquitectura MAC**
+**Fig. 3. Diagrama a bloques de la arquitectura MAC**
 
 
 
@@ -106,51 +110,6 @@ Los bloques que se utilizan para el proceso de verificación son los siguientes:
 
 
 
-
-
-```verilog
-`timescale 1 ns / 100 ps
-
-module tb_mac ();
-	reg rst, clk, stf, eof;
-	reg [17:0] y;
-	
-	wire [35:0] a;
-	wire [17:0] x;	 
-	wire [5:0] i;	
-	
-	top_mac             DUT_mac    (rst, clk, stf, x, a, 6'b000010, 6'b011100, eof, i, y);
-	rom_a    #(.n(36))  DUT_rom_a  (i, a);
-	rom_x	 #(.n(18))  DUT_rom_x  (i, x);
-	
-	always #5 clk=~clk;
-	
-	initial begin
-	clk = 0;
-	rst = 1;
-	stf = 0;
-	
-	#20
-	rst = 0;	
-	
-	#40
-	stf = 1;
-	
-	#20
-	stf = 0;
-		
-	end
-
-endmodule
-
-```
-
-
-
-![img](imagenes/simulacion.png)
-
-
-
 ### 3.3 Códigos
 
 - 3.3.1 [mult_generic](331_mult_generic.md)
@@ -161,8 +120,6 @@ endmodule
 - 3.3.6 [ff_gen_hab](336_ff_gen_hab.md)
 - 3.3.7 [ajuste](337_ajuste.md)
 - 3.3.8 [top_mac](338_top_mac.md)
-
-
 
 
 
