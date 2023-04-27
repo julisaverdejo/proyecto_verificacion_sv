@@ -3,10 +3,6 @@ Autor: Julisa Verdejo Palacios
 
 
 
-***Resumen:***
-
-
-
 ## 1. Verificación
 
 La verificación es la comprobación de la legitimidad de un proceso, tarea o en general de cualquier cosa. En diseño de sistemas digitales y en particular en los lenguajes de descripción de hardware (HDL), la verificación ayuda a corregir errores, mejorar la calidad y confiabilidad del diseño, esto puede ahorrar tiempo y dinero antes de implementarlo físicamente.
@@ -27,7 +23,7 @@ El modelo de verificación en SV se muestra en la siguiente imagen:
 
 **Fig 1. Modelo de verificación**
 
-> Nota: Revisar primero el siguiente archivo: [oop](oop.md)
+> Nota: Primero revisar el siguiente archivo: [oop](oop.md)
 
 Los bloques que se utilizan para el proceso de verificación son los siguientes:
 
@@ -53,37 +49,19 @@ Los bloques que se utilizan para el proceso de verificación son los siguientes:
 
   
 
-### 2.2 Tipos de datos
-
-
-
-# Software para verificación en SV
-
-
-
-
-
-## 3. EDA Playground
-
- 
-
-
-
-
-
-
-
 # Dispositivo a verificar
 
 
 
-## 4. MAC (Multiply-Accumulator)
+## 3. MAC (Multiply-Accumulator)
 
 
 
-### 4.1 Aplicaciones
+### 3.1 Aplicaciones
 
-### 4.2 Características
+
+
+### 3.2 Características
 
 * Trabaja con [punto fijo](fixed_point.md)
 * 18 bits de entrada 
@@ -92,6 +70,10 @@ Los bloques que se utilizan para el proceso de verificación son los siguientes:
 * 18 bits de salida
 
 ![img](imagenes/mac.svg)
+
+**Fig. 2. Módulo MAC**
+
+
 
 * ***x*** entrada
 * ***a*** coeficientes
@@ -107,11 +89,9 @@ Los bloques que se utilizan para el proceso de verificación son los siguientes:
 
 
 
-
-
-
-
 ![img](imagenes/mac_bloques.svg)
+
+**Fig. 3. Diagrama a bloques de arquitectura MAC**
 
 
 
@@ -171,16 +151,16 @@ endmodule
 
 
 
-### 4.3 Códigos
+### 3.3 Códigos
 
-- 4.3.1 [mult_generic](01_mult_generic.md)
-- 4.3.2 [sum_generic](02_sum_generic.md)
-- 4.3.3 [ff_gen_hab2](03_ff_gen_hab2.md)
-- 4.3.4 [contador](04_contador.md)
-- 4.3.5 [fsm_mac](05_fsm_mac.md)
-- 4.3.6 [ff_gen_hab](06_ff_gen_hab.md)
-- 4.3.7 [ajuste](07_ajuste.md)
-- 4.3.8 [top_mac](08_top_mac.md)
+- 3.3.1 [mult_generic](331_mult_generic.md)
+- 3.3.2 [sum_generic](332_sum_generic.md)
+- 3.3.3 [ff_gen_hab2](333_ff_gen_hab2.md)
+- 3.3.4 [contador](334_contador.md)
+- 3.3.5 [fsm_mac](335_fsm_mac.md)
+- 3.3.6 [ff_gen_hab](336_ff_gen_hab.md)
+- 3.3.7 [ajuste](337_ajuste.md)
+- 3.3.8 [top_mac](338_top_mac.md)
 
 
 
@@ -190,7 +170,7 @@ endmodule
 
 
 
-## 5. Plan de verificación
+## 4. Plan de verificación
 
 
 
