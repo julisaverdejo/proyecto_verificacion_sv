@@ -77,8 +77,6 @@ La arquitectura MAC tiene diversas aplicaciones en el campo de procesamiento dig
 
 **Fig. 2. Módulo MAC**
 
-
-
 * ***x*** entrada
 * ***a*** coeficientes
 * ***n*** indica el número de coeficientes que se van a ingresar, o en otras palabras el número de multiplicaciones y sumas que se van a realizar.
@@ -90,6 +88,39 @@ La arquitectura MAC tiene diversas aplicaciones en el campo de procesamiento dig
 * ***y*** es la salida.
 * ***s*** permite mover el punto decimal en ***y***.
 * ***eof*** bandera que indica si la operación ha terminado.
+
+Además esta arquitectura MAC realiza la operación producto punto:
+
+**Producto punto**
+
+Sea $\mathbf{a}$ y $\mathbf{b}$ dos vectores definidos como:
+$$
+	\mathbf{x} = \left[ \begin{array}{c}
+		x_{1}\\
+		x_{2}\\
+		\vdots\\
+		x_{n}
+	\end{array}
+		\right] 
+		
+	\quad \mathrm{y} \quad
+	
+	\mathbf{y} = \left[ \begin{array}{c}
+		y_{1}\\
+		y_{2}\\
+		\vdots\\
+		y_{n}
+	\end{array}
+		\right]
+		
+	
+$$
+
+
+Entonces el producto esta definido como:
+$$
+\mathbf{a} \cdot \mathbf{b} = \sum_{i = 1}^{n} = a_{1} b_{1} + a_{2} b_{2} + \ldots + a_{n} b_{n}
+$$
 
 
 
