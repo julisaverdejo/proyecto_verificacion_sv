@@ -96,31 +96,20 @@ Además esta arquitectura MAC realiza la operación producto punto:
 **Producto punto**
 
 Sea $\mathbf{a}$ y $\mathbf{b}$ dos vectores definidos como:
-$$
-\mathbf{x} = \left[ \begin{array}{c}
-		x_{1}\\
-		x_{2}\\
-		\vdots\\
-		x_{n}
-	\end{array}
-		\right] 
-		
-	\quad \mathrm{y} \quad
-	
-	\mathbf{y} = \left[ \begin{array}{c}
-		y_{1}\\
-		y_{2}\\
-		\vdots\\
-		y_{n}
-	\end{array}
-		\right]
-$$
+
+
+
+<img src ="imagenes/ec3.svg" alt="mac" style="zoom:80%;" />
+
 
 
 Entonces el producto esta definido como:
-$$
-\mathbf{a} \cdot \mathbf{b} = \sum_{i = 1}^{n} = a_{1} b_{1} + a_{2} b_{2} + \ldots + a_{n} b_{n}
-$$
+
+
+
+<img src ="imagenes/ec4.svg" alt="mac" style="zoom:80%;" />
+
+
 
 
 
