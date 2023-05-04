@@ -52,11 +52,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="357.34949"
-     inkscape:cy="175.59403"
+     inkscape:zoom="1.3577432"
+     inkscape:cx="202.33825"
+     inkscape:cy="166.94988"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g1530"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:window-width="1366"
@@ -72,7 +72,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -91,7 +91,7 @@
          x="55.12035"
          y="51.779724" />
       <rect
-         style="fill:#d7eef4;stroke:#003380;stroke-width:0.5"
+         style="fill:#aaccff;stroke:#003380;stroke-width:0.5"
          id="rect835"
          width="100"
          height="70"
@@ -151,28 +151,24 @@
            x="76.51458"
            y="76.656601"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Californian FB';-inkscape-font-specification:'Californian FB';stroke-width:0.264583">Environment</tspan></text>
-      <g
-         id="g1024"
-         transform="translate(-9.1680025)">
-        <rect
-           style="fill:#ddafe9;stroke:#800066;stroke-width:0.499999;stroke-opacity:1"
-           id="rect855"
-           width="19.500002"
-           height="9.500001"
-           x="90.038002"
-           y="82.029724" />
-        <text
-           xml:space="preserve"
-           style="font-size:3.52777px;line-height:1.25;font-family:'Virgil 3 YOFF';-inkscape-font-specification:'Virgil 3 YOFF';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-           x="92.449287"
+      <rect
+         style="fill:#ddafe9;stroke:#800066;stroke-width:0.499999;stroke-opacity:1"
+         id="rect855"
+         width="19.500002"
+         height="9.500001"
+         x="80.870003"
+         y="82.029724" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.52777px;line-height:1.25;font-family:'Virgil 3 YOFF';-inkscape-font-specification:'Virgil 3 YOFF';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="83.281288"
+         y="87.927803"
+         id="text911"><tspan
+           sodipodi:role="line"
+           id="tspan909"
+           x="83.281288"
            y="87.927803"
-           id="text911"><tspan
-             sodipodi:role="line"
-             id="tspan909"
-             x="92.449287"
-             y="87.927803"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Californian FB';-inkscape-font-specification:'Californian FB';stroke-width:0.264583">Generator</tspan></text>
-      </g>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Californian FB';-inkscape-font-specification:'Californian FB';stroke-width:0.264583">Generator</tspan></text>
       <g
          id="g1042"
          transform="translate(9.1679951)">
@@ -441,28 +437,24 @@
          style="fill:none;stroke:#000000;stroke-width:0.500001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 129.61979,106.78 h -8.002"
          id="path1007" />
-      <g
-         id="g1054"
-         transform="translate(-120.93847,3.9193124)">
-        <rect
-           style="fill:#ff8080;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect1011"
-           width="14.5"
-           height="7.5"
-           x="227.80626"
-           y="79.110413" />
-        <text
-           xml:space="preserve"
-           style="font-size:3.52777px;line-height:1.25;font-family:'Virgil 3 YOFF';-inkscape-font-specification:'Virgil 3 YOFF';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-           x="228.51477"
-           y="83.764404"
-           id="text1015"><tspan
-             sodipodi:role="line"
-             id="tspan1013"
-             x="228.51477"
-             y="83.764404"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:'Californian FB';-inkscape-font-specification:'Californian FB';stroke-width:0.264583">transaction</tspan></text>
-      </g>
+      <rect
+         style="fill:#dbe3db;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1011"
+         width="14.5"
+         height="7.5"
+         x="106.86779"
+         y="83.029724" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.52777px;line-height:1.25;font-family:'Virgil 3 YOFF';-inkscape-font-specification:'Virgil 3 YOFF';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="107.5763"
+         y="87.683716"
+         id="text1015"><tspan
+           sodipodi:role="line"
+           id="tspan1013"
+           x="107.5763"
+           y="87.683716"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:'Californian FB';-inkscape-font-specification:'Californian FB';stroke-width:0.264583">transaction</tspan></text>
       <path
          sodipodi:type="star"
          style="fill:#000000;stroke:#000000;stroke-width:2.3596;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -488,28 +480,24 @@
          style="fill:none;stroke:#000000;stroke-width:0.500002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 102.62221,106.77971 h 3.998"
          id="path1058" />
-      <g
-         id="g1066"
-         transform="translate(-120.93847,23.919307)">
-        <rect
-           style="fill:#ff8080;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="rect1060"
-           width="14.5"
-           height="7.5"
-           x="227.80626"
-           y="79.110413" />
-        <text
-           xml:space="preserve"
-           style="font-size:3.52777px;line-height:1.25;font-family:'Virgil 3 YOFF';-inkscape-font-specification:'Virgil 3 YOFF';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
-           x="228.51477"
-           y="83.764404"
-           id="text1064"><tspan
-             sodipodi:role="line"
-             id="tspan1062"
-             x="228.51477"
-             y="83.764404"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:'Californian FB';-inkscape-font-specification:'Californian FB';stroke-width:0.264583">transaction</tspan></text>
-      </g>
+      <rect
+         style="fill:#dbe3db;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1060"
+         width="14.5"
+         height="7.5"
+         x="106.86779"
+         y="103.02972" />
+      <text
+         xml:space="preserve"
+         style="font-size:3.52777px;line-height:1.25;font-family:'Virgil 3 YOFF';-inkscape-font-specification:'Virgil 3 YOFF';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
+         x="107.5763"
+         y="107.68371"
+         id="text1064"><tspan
+           sodipodi:role="line"
+           id="tspan1062"
+           x="107.5763"
+           y="107.68371"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:'Californian FB';-inkscape-font-specification:'Californian FB';stroke-width:0.264583">transaction</tspan></text>
     </g>
   </g>
 </svg>

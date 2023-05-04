@@ -15,19 +15,17 @@ La representación de punto fijo de un número $X$ es $X(a,b)$ donde $a$ es la p
 **Suma**
 
 Supóngase que se quiere sumar dos números $X(a,b)$ con el mismo formato de punto fijo, el número más grande que se puede tener en la suma se obtiene sumando los dos números más negativos, esto es:
-$$
--2^a +  (-2^a) = 2(-2^a) = -2^{a+1}
-$$
+
+<img src ="imagenes/ec1.svg" alt="mac" style="zoom:80%;" />
+
 Esto quiere decir que para representar el resultado de la suma se necesita 1 bit más para la parte entera, es decir $X(a+1,b)$.
 
 **Multiplicación**
 
 En la multiplicación sucede algo parecido, el número más grande se obtiene multiplicando los números más negativos y los más positivos:
-$$
-(-2^a)(-2^a) = 2^{2a} \\
 
-(-2^{a} - 2^{-b})^{2} = 2^{2a} - 2^{2b}
-$$
+<img src ="imagenes/ec2.svg" alt="mac" style="zoom:80%;" />
+
 Por lo tanto la representación en punto fijo del resultado es $X(2a+1,2b)$
 
 

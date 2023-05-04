@@ -19,7 +19,9 @@ SystemVerilog es un lenguaje de descripción y verificación de hardware (HDVL) 
 
 El modelo de verificación en SV se muestra en la siguiente imagen:
 
-![img](imagenes/bloques_sv.svg)
+<img src ="imagenes/bloques_sv.svg" alt="mac" style="zoom:400%;" />
+
+
 
 **Fig 1. Modelo de verificación**
 
@@ -53,7 +55,7 @@ Los bloques que se utilizan para el proceso de verificación son los siguientes:
 
 
 
-## 3. MAC (Multiply-Accumulator)
+## 3. MAC (Multiply-Accumulate)
 
 Es una arquitectura diseñada para realizar operaciones de multiplicación y acumulación de manera eficiente en aplicaciones de procesamiento digital de señales.
 
