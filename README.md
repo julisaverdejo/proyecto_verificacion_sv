@@ -21,9 +21,7 @@ El modelo de verificación en SV se muestra en la siguiente imagen:
 
 <img src ="imagenes/bloques_sv.svg" alt="mac" style="zoom:400%;" />
 
-
-
-**Fig 1. Modelo de verificación**
+**Fig 1. Modelo de verificación** [3]
 
 > Nota: Primero revisar el siguiente archivo: [oop](oop.md)
 
@@ -111,8 +109,6 @@ Entonces el producto esta definido como:
 
 
 
-
-
 ![img](imagenes/mac_bloques.svg)
 
 **Fig. 3. Diagrama a bloques de la arquitectura MAC**
@@ -157,7 +153,9 @@ Representación en punto fijo de las variables de la MAC
 
 ## 4. Plan de verificación
 
-1. Realizar la verificación de la MAC con valores de entrada conocidos para comprobar que funciona adecuadamente.
+1. Cargar un archivo de texto y realizar la verificación de la MAC con valores de entrada conocidos para comprobar su funcionamiento adecuado.
+
+> Nota: Revisar el documento [Leer archivos de texto en SV](load_text_file.md).
 
 
 
@@ -166,6 +164,8 @@ Representación en punto fijo de las variables de la MAC
 [1] [Duolos: What is SystemVerilog?](https://www.doulos.com/knowhow/systemverilog/what-is-systemverilog/)
 
 [2] [What are the OOPS Concepts in SystemVerilog?](https://chipedge.com/what-are-the-oops-concepts-in-systemverilog/)
+
+[3] [Verification Guide: SystemVerilog TestBench Example – Memory](https://verificationguide.com/systemverilog-examples/systemverilog-testbench-example-memory/#TestBench_Architecture)
 
 
 
