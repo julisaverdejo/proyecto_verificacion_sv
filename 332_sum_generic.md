@@ -1,6 +1,6 @@
 # 2. sum_generic
 
-- Descripción:
+- Descripción: En este código se implementa la suma entre dos números.
 - Código:
 
 ```verilog

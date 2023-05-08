@@ -1,6 +1,6 @@
 # 4. contador
 
-- Descripción:
+- Descripción: Contador con seleccionador de operación. 
 - Código:
 
 ```verilog

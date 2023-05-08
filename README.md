@@ -159,6 +159,114 @@ Representación en punto fijo de las variables de la MAC
 
 
 
+**Enlace EDA playground**: [Verificacion MAC](https://www.edaplayground.com/x/XRMe)
+
+Resultados:
+
+```plain
+# KERNEL: [ DRIVER ] ----- Reset Started -----
+# KERNEL: [ DRIVER ] ----- Reset Ended   -----
+# KERNEL: -------------------------
+# KERNEL: - [ GENERATOR ] 
+# KERNEL: -------------------------
+# KERNEL: - x = 000001000000000000, a = 000000010000000000000000000000000000
+# KERNEL: - y_aux = 000000000000000000000000000000000000000000000000000000000000, y = 000000000000000000
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ GENERATOR ] 
+# KERNEL: -------------------------
+# KERNEL: - x = 000001010000000000, a = 000000100000000000000000000000000000
+# KERNEL: - y_aux = 000000000000000000000000000000000000000000000000000000000000, y = 000000000000000000
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ GENERATOR ] 
+# KERNEL: -------------------------
+# KERNEL: - x = 000001100000000000, a = 000000110000000000000000000000000000
+# KERNEL: - y_aux = 000000000000000000000000000000000000000000000000000000000000, y = 000000000000000000
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ DRIVER ] 
+# KERNEL: -------------------------
+# KERNEL: - x = 000001000000000000, a = 000000010000000000000000000000000000
+# KERNEL: - y_aux = 000000000000000000000000000000000000000000000000000000000000, y = 000000000000000000
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ Monitor ] 
+# KERNEL: -------------------------
+# KERNEL: - x = 000000000000000000, a = 000000000000000000000000000000000000
+# KERNEL: - y_aux = 000000000000000000000000000000000000000000000000000000000000, y = 000000000000000000
+# KERNEL: -------------------------
+# KERNEL: Result is as Expected
+# KERNEL: -------------------------
+# KERNEL: - [ Scoreboard ] 
+# KERNEL: -------------------------
+# KERNEL: - x = 000000000000000000, a = 000000000000000000000000000000000000
+# KERNEL: - y_aux = 000000000000000000000000000000000000000000000000000000000000, y = 000000000000000000
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ DRIVER ] 
+# KERNEL: -------------------------
+# KERNEL: - x = 000001010000000000, a = 000000100000000000000000000000000000
+# KERNEL: - y_aux = 000000000000000000000000000000000000000000000000000000000000, y = 000000000000000000
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ Monitor ] 
+# KERNEL: -------------------------
+# KERNEL: - x = 000001000000000000, a = 000000010000000000000000000000000000
+# KERNEL: - y_aux = 000000000000000000000000000000000000000000000000000000000000, y = 000000000000000000
+# KERNEL: -------------------------
+# KERNEL: Result is as Expected
+# KERNEL: -------------------------
+# KERNEL: - [ Scoreboard ] 
+# KERNEL: -------------------------
+# KERNEL: - x = 000001000000000000, a = 000000010000000000000000000000000000
+# KERNEL: - y_aux = 000000000000000000000000000000000000000000000000000000000000, y = 000000000000000000
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ DRIVER ] 
+# KERNEL: -------------------------
+# KERNEL: - x = 000001100000000000, a = 000000110000000000000000000000000000
+# KERNEL: - y_aux = 000000000000000000000000000000000000000000000000000000000000, y = 000000000000000000
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ Monitor ] 
+# KERNEL: -------------------------
+# KERNEL: - x = 000001010000000000, a = 000000100000000000000000000000000000
+# KERNEL: - y_aux = 000000000000000000000000000000000000000000000000000000000000, y = 000000000000000000
+# KERNEL: -------------------------
+# KERNEL: Result is as Expected
+# KERNEL: -------------------------
+# KERNEL: - [ Scoreboard ] 
+# KERNEL: -------------------------
+# KERNEL: - x = 000001010000000000, a = 000000100000000000000000000000000000
+# KERNEL: - y_aux = 000000000000000000000000000000000000000000000000000000000000, y = 000000000000000000
+# KERNEL: -------------------------
+```
+
+
+
+# 5. Mejoras a futuro
+
+1. Realizar una plantilla de cada módulo utilizado en la verificación.
+
+2. Lograr que el scoreboard funcione con representación en punto fijo.
+
+3. Hacer que la transaction  sea aleatoria.
+
+   
+
+# 6 . Conclusiones
+
+Este proyecto puso a prueba mis habilidades para investigar, comprender y analizar cómo funcionan los diferentes módulos utilizados en la verificación en SystemVerilog. El objetivo de este proyecto fue realizar una guía sobre como usar estos bloques y emplearlos en la verificación de una arquitectura MAC.
+
+El primer reto fue entender y pasar códigos descritos en VHDL a Verilog, asegurarme de que estos fueran sintetizables y que el diseño siguiera funcionando. Comprender claramente la mecánica de cada módulo y explicar de manera clara y concisa su funcionamiento, asimismo investigar la representación en punto fijo y conceptos básicos de programación orientada a objetos. Estas dificultades fueron afrontadas utilizando los medios tecnológicos de comunicación y la organización del proyecto por etapas.
+
+Se decidió verificar una arquitectura MAC, principalmente porque es una arquitectura muy utilizada en procesamiento digital, con ella se pueden diseñar filtros IIR y FIR,  realizar convolución de imágenes, entre otras aplicaciones.
+
+A pesar de que no obtuve los resultados esperados, de este proyecto logré aprender el uso de SystemVerilog y la importancia que este lenguaje nos brinda en la verificación de algún dispositivo. Considero que futuras generaciones pueden darle continuación a este proyecto.
+
+ 
+
 ## Referencias
 
 [1] [Duolos: What is SystemVerilog?](https://www.doulos.com/knowhow/systemverilog/what-is-systemverilog/)

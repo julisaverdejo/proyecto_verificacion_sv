@@ -1,6 +1,6 @@
 # 3. ff_gen_hab2
 
-- Descripción:
+- Descripción: En este código de describe el funcionamieto de un flip-flop genérico con habilitación.
 - Código:
 
 ```verilog

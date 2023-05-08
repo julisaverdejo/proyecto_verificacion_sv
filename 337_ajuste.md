@@ -1,6 +1,6 @@
 # 7. ajuste
 
-- Descripción:
+- Descripción: Permite mover el punto decimal en la salida y truncar su valor.
 - Código:
 
 ```verilog

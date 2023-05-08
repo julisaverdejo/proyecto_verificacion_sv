@@ -1,6 +1,6 @@
 # 5. fsm_mac
 
-- Descripción:
+- Descripción: Máquina de estados que controla la acumulación de la arquitectura MAC.
 - Código:
 
 ```verilog

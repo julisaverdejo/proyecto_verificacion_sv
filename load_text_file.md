@@ -74,7 +74,318 @@ endmodule
 
 
 
-> Nota: La lectura del archivo de texto en la clase generator debe ser dentro del main.
+Ejemplo 2: Sumador
+
+La lectura del archivo de texto en la clase generator debe ser dentro del main.
+
+> Nota: El archivo a tiene los números del 1-10 y el b del 2-11.
+
+``` systemverilog
+class generator;// (mailbox gen2driv)
+   
+  //declaring transaction class
+  transaction trans;
+  //rand transaction trans; 
+  //declaring mailbox
+  mailbox gen2driv; 
+  //repeat count, to specify number of items to generate
+  int  repeat_count;
+  
+  //event, to indicate the end of transaction generation
+  event ended;
+  
+  //-------------constructor------------
+  function new(mailbox gen2driv);
+    //getting the mailbox handle from env
+    this.gen2driv = gen2driv;
+  endfunction
+//---------------main task, generates(create and randomizes) 
+//the repeat_count number of transaction packets and puts into mailbox
+  task main();
+    int fd1;
+    int fd2;
+    int idxa;
+    int idxb;
+    fd1 = $fopen("data1.txt", "r");
+    fd2 = $fopen("data2.txt", "r");
+    repeat(repeat_count) begin
+      trans = new();
+      $fscanf(fd1, "%d", idxa);
+      $fscanf(fd2, "%d", idxb);
+      //$fgets(line, file_a);
+      //$fgets(line, file_b);
+      //if( !trans.randomize() ) $fatal("Gen:: trans randomization //failed");
+      trans.a = idxa;
+      trans.b = idxb;
+      trans.display("[ GENERATOR ]");
+      gen2driv.put(trans);
+    end
+    -> ended; //triggering indicates the end of generation
+    $fclose(fd1);
+    $fclose(fd2);
+  endtask 
+endclass
+
+```
+
+Resultados:
+
+```plain
+# KERNEL: [ DRIVER ] ----- Reset Started -----
+# KERNEL: [ DRIVER ] ----- Reset Ended   -----
+# KERNEL: -------------------------
+# KERNEL: - [ GENERATOR ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 2, b = 1
+# KERNEL: - c = 0
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ GENERATOR ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 3, b = 2
+# KERNEL: - c = 0
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ GENERATOR ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 4, b = 3
+# KERNEL: - c = 0
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ GENERATOR ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 5, b = 4
+# KERNEL: - c = 0
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ GENERATOR ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 6, b = 5
+# KERNEL: - c = 0
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ GENERATOR ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 7, b = 6
+# KERNEL: - c = 0
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ GENERATOR ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 8, b = 7
+# KERNEL: - c = 0
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ GENERATOR ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 9, b = 8
+# KERNEL: - c = 0
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ GENERATOR ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 10, b = 9
+# KERNEL: - c = 0
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ GENERATOR ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 11, b = 10
+# KERNEL: - c = 0
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ DRIVER ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 2, b = 1
+# KERNEL: - c = 3
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ Monitor ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 2, b = 1
+# KERNEL: - c = 3
+# KERNEL: -------------------------
+# KERNEL: Result is as Expected
+# KERNEL: -------------------------
+# KERNEL: - [ Scoreboard ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 2, b = 1
+# KERNEL: - c = 3
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ DRIVER ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 3, b = 2
+# KERNEL: - c = 5
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ Monitor ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 3, b = 2
+# KERNEL: - c = 5
+# KERNEL: -------------------------
+# KERNEL: Result is as Expected
+# KERNEL: -------------------------
+# KERNEL: - [ Scoreboard ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 3, b = 2
+# KERNEL: - c = 5
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ DRIVER ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 4, b = 3
+# KERNEL: - c = 7
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ Monitor ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 4, b = 3
+# KERNEL: - c = 7
+# KERNEL: -------------------------
+# KERNEL: Result is as Expected
+# KERNEL: -------------------------
+# KERNEL: - [ Scoreboard ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 4, b = 3
+# KERNEL: - c = 7
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ DRIVER ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 5, b = 4
+# KERNEL: - c = 9
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ Monitor ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 5, b = 4
+# KERNEL: - c = 9
+# KERNEL: -------------------------
+# KERNEL: Result is as Expected
+# KERNEL: -------------------------
+# KERNEL: - [ Scoreboard ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 5, b = 4
+# KERNEL: - c = 9
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ DRIVER ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 6, b = 5
+# KERNEL: - c = 11
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ Monitor ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 6, b = 5
+# KERNEL: - c = 11
+# KERNEL: -------------------------
+# KERNEL: Result is as Expected
+# KERNEL: -------------------------
+# KERNEL: - [ Scoreboard ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 6, b = 5
+# KERNEL: - c = 11
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ DRIVER ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 7, b = 6
+# KERNEL: - c = 13
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ Monitor ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 7, b = 6
+# KERNEL: - c = 13
+# KERNEL: -------------------------
+# KERNEL: Result is as Expected
+# KERNEL: -------------------------
+# KERNEL: - [ Scoreboard ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 7, b = 6
+# KERNEL: - c = 13
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ DRIVER ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 8, b = 7
+# KERNEL: - c = 15
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ Monitor ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 8, b = 7
+# KERNEL: - c = 15
+# KERNEL: -------------------------
+# KERNEL: Result is as Expected
+# KERNEL: -------------------------
+# KERNEL: - [ Scoreboard ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 8, b = 7
+# KERNEL: - c = 15
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ DRIVER ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 9, b = 8
+# KERNEL: - c = 17
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ Monitor ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 9, b = 8
+# KERNEL: - c = 17
+# KERNEL: -------------------------
+# KERNEL: Result is as Expected
+# KERNEL: -------------------------
+# KERNEL: - [ Scoreboard ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 9, b = 8
+# KERNEL: - c = 17
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ DRIVER ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 10, b = 9
+# KERNEL: - c = 19
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ Monitor ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 10, b = 9
+# KERNEL: - c = 19
+# KERNEL: -------------------------
+# KERNEL: Result is as Expected
+# KERNEL: -------------------------
+# KERNEL: - [ Scoreboard ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 10, b = 9
+# KERNEL: - c = 19
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ DRIVER ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 11, b = 10
+# KERNEL: - c = 21
+# KERNEL: -------------------------
+# KERNEL: -------------------------
+# KERNEL: - [ Monitor ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 11, b = 10
+# KERNEL: - c = 21
+# KERNEL: -------------------------
+# KERNEL: Result is as Expected
+# KERNEL: -------------------------
+# KERNEL: - [ Scoreboard ] 
+# KERNEL: -------------------------
+# KERNEL: - a = 11, b = 10
+# KERNEL: - c = 21
+# KERNEL: -------------------------
+```
+
+
 
 
 

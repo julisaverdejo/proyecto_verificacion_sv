@@ -1,6 +1,6 @@
 # 6. ff_gen_hab
 
-- Descripción:
+- Descripción: Flip-flop genérico con habilitación.
 - Código:
 
 ```verilog

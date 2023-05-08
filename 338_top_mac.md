@@ -1,6 +1,6 @@
 # 8. top_mac
 
-- Descripción:
+- Descripción: Es el archivo principal e instancia todos los módulos descritos anteriormente.
 - Código:
 
 ```verilog

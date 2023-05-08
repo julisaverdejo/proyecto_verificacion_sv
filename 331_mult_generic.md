@@ -1,6 +1,6 @@
 # 1. mult_generic
 
-- Descripción: 
+- Descripción:  Este código se encarga de realizar la multiplicación de dos números.
 
 - Código
 
