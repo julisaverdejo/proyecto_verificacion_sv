@@ -48,7 +48,7 @@ module ajuste (r, s, y);
 			40 : y = r[57:40];
 			41 : y = r[58:41];
 			42 : y = r[59:42]; 
-			default y = 0;
+			default y = r[59:42];
 		endcase
 		
 endmodule

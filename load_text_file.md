@@ -1,4 +1,4 @@
-# Cargar un archivo de texto a la clase generator.
+# Cargar un archivo en SV.
 
 Para cargar, leer y acceder a los valores de un archivo de texto en SystemVerilog se utilizan las siguientes funciones:
 
@@ -112,9 +112,6 @@ class generator;// (mailbox gen2driv)
       trans = new();
       $fscanf(fd1, "%d", idxa);
       $fscanf(fd2, "%d", idxb);
-      //$fgets(line, file_a);
-      //$fgets(line, file_b);
-      //if( !trans.randomize() ) $fatal("Gen:: trans randomization //failed");
       trans.a = idxa;
       trans.b = idxb;
       trans.display("[ GENERATOR ]");
